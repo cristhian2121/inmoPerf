@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inmobiliara perfil caribe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
+    <script src="main.js"></script>
+
+    <!-- <script src="bower_components/firebase/firebase.js"></script> -->
+
+</head>
+
+<body>
+    <div id=backimg>
+        <br>
+        <br>
+
+        <h2 id="tituloBusqueda">Busqueda</h2>
+
+        <form action="" class="form-horizontal" style="margin:0 auto">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+                <a href="https://peru.info/Portals/0/Images/Productos/6/118-imagen-1639161372018.jpg"
+                    class="navbar"></a>
+                </br>
+            </nav>
+
+            <label for="type" type="text" class="col-md-4 col-md-offset-4">Tipo:
+                <select name="type" id="tipoinmueble" class="form-control">
+                    <option value="" disabled selected>Ques buscas?</option>
+                    <option value="1">Lotes</option>
+                    <option value="2">Apartamentos</option>
+                    <option value="3">Casas</option>
+                    <option value="4">Hoteles</option>
+                </select>
+            </label>
+
+            <div>
+                <label for="city" type="text" class="col-md-4 col-md-offset-4">Ciudad:
+                    <select name="city" id="city" class="form-control">
+                        <option value="" disabled selected>Donde lo buscas?</option>
+                        <option value="1">Santa marta</option>
+                        <option value="2">Barranquilla</option>
+                        <option value="3">Cartagena</option>
+                        <option value="4">Guajira</option>
+
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="saleRent" type="text" class="col-md-4 col-md-offset-4">Venta y/o alquiler:
+                    <select class="mdb-select md-form" name="saleRent" id="saleRent">
+                        <option value="" disabled selected>Elige la opción</option>
+                        <option value="1">Venta</option>
+                        <option value="2">Alquiler</option>
+                    </select>
+                </label>
+            </div>
+            <div class="button col-md-4 col-md-offset-4">
+
+                <button type="button" id="btnFind" class="btn btn-info btn-responsive btninter"
+                    onclick="find()">Buscar</button>
+            </div>
+
+        </form>
+        <p></p>
+    </div>
+    <p>
+        <br>
+        <br>
+        <br>
+
+    </p>
+    <div>
+        <!-- Footer -->
+        <footer class="page-footer font-small stylish-color-dark pt-4" id="backFooter">
+            <div class="container text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-4 mx-auto">
+
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Inmobiliaria perfil caribe </h5>
+                        <p>Gerente Comercial: Adriana Giraldo </br>
+                            Contáctanos:
+                            </br> +57 304 622 7510 Colombia
+                            </br> +56 9 78182857 Chile
+                            </br> Santa Marta, Colombia</p>
+
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-2 mx-auto">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Propiedades</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href=" ">Casas</a>
+                            </li>
+                            <li>
+                                <a href="#!">Locales</a>
+                            </li>
+                            <li>
+                                <a href="#!">Apartamentos</a>
+                            </li>
+                            <li>
+                                <a href="#!">Hoteles</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Siguenos</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a
+                                    href="https://www.facebook.com/Inmobiliaria-Perfil-Caribe-501221856563374/?__xts__[0]=68.ARCJ_DdIL_2d19gN7h0_D4b2TMi7aAL1MsHema09o3KwzEwzo_V6jelVEAFGRki6ETO7IDfiDNeO1hSZ-SkDdnC0VNNZ0OagY1zx7s0gkUl1mo8hTo5U_BqeB1XupFIAFw2uIbFFeRTv48uGRbiA-FL-6sHu6_Vw-VLxjeoUAnuMybzz3-oV5zhGxyrJRpOLx28F4xDLLoS1bSAbhR6Mpndd4N17jBpMXpbHkRjerf-VW4k1roeZ2u3IJXKvXfGs33j3oXXaLyO7M-TH58T9cglzXfKyrJhmEsbyEv8TycmMAoKWXDRov9HkwjTyVRDy3f74GdPUC-iu-8HmU1lkcBY">Facebook</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <hr>
+
+                    <!-- Call to action -->
+                    <ul class="list-unstyled list-inline text-center py-2">
+                        <li class="list-inline-item">
+                            <a class="mb-1">Para obtener mejores servicios dale click aqui</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!" class="btn btn-danger btn-rounded">Registrar</a>
+                        </li>
+                    </ul>
+                    <!-- Call to action -->
+
+                    <hr>
+
+                    <!-- Social buttons -->
+                    <ul class="list-unstyled list-inline text-center">
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-fb mx-1">
+                                <i class="fab fa-facebook-f"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-tw mx-1">
+                                <i class="fab fa-twitter"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-gplus mx-1">
+                                <i class="fab fa-google-plus-g"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-li mx-1">
+                                <i class="fab fa-linkedin-in"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-dribbble mx-1">
+                                <i class="fab fa-dribbble"> </i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Social buttons -->
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center py-3">Copyright ©2019 All rights reserved - This page is
+                        made with by
+                        <a href="">Bitools</a>
+                    </div>
+        </footer>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDvJ5PS0s0nbcVjttaCTk-t8Il6EETxABs",
+            authDomain: "inmobiliariapaola-649e7.firebaseapp.com",
+            databaseURL: "https://inmobiliariapaola-649e7.firebaseio.com",
+            projectId: "inmobiliariapaola-649e7",
+            storageBucket: "inmobiliariapaola-649e7.appspot.com",
+            messagingSenderId: "1089349953487"
+        };
+        firebase.initializeApp(config);
+        let amor = document.getElementById('pepe')    
+        getType();
+       
+
+        function getType() {
+            firebase.database().ref('/tipo').once('value')
+            .then( function(snapshot){
+                let snap = snapshot.val();
+                console.log(snap);
+
+            })
+        }
+    </script>
+
+</body>
+
+</html>
