@@ -3,11 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 import FormComponent from './components/formComponent'
 
+
 class App extends Component {
+      
   render() {
-    return (
+       return (
       <div>
-        <FormComponent/>
+        <FormComponent name="holaaa"/>
       </div>
     );
   }
